@@ -13,8 +13,13 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { HomeComponent } from "./views/home/home.component";
 import { MatCardModule } from "@angular/material/card";
-import { ProdCrudComponent } from './views/prod-crud/prod-crud.component';
-import { RedDirective } from './directives/red.directive';
+import { MatButtonModule } from "@angular/material/button";
+
+import { ProdCrudComponent } from "./views/prod-crud/prod-crud.component";
+
+import { RedDirective } from "./directives/red.directive";
+import { ProductCreateComponent } from "./components/product/product-create/product-create.component";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +29,7 @@ import { RedDirective } from './directives/red.directive';
     HomeComponent,
     ProdCrudComponent,
     RedDirective,
+    ProductCreateComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +40,7 @@ import { RedDirective } from './directives/red.directive';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
