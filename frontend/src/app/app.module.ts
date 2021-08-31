@@ -13,6 +13,7 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { HomeComponent } from "./views/home/home.component";
 import { MatCardModule } from "@angular/material/card";
+import { ProdCrudComponent } from './views/prod-crud/prod-crud.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { MatCardModule } from "@angular/material/card";
     FooterComponent,
     NavComponent,
     HomeComponent,
+    ProdCrudComponent,
   ],
   imports: [
     BrowserModule,
