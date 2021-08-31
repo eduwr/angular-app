@@ -3,6 +3,10 @@ import { Router } from "@angular/router";
 import { Product } from "../product.model";
 import { ProductService } from "../product.service";
 
+interface ProductInput {
+  name: string;
+  price: string | null;
+}
 @Component({
   selector: "app-product-create",
   templateUrl: "./product-create.component.html",
@@ -11,9 +15,9 @@ import { ProductService } from "../product.service";
 export class ProductCreateComponent implements OnInit {
   constructor(private productService: ProductService, private router: Router) {}
 
-  product: Product = {
+  product: ProductInput = {
     name: "",
-    price: 0,
+    price: null,
   };
 
   ngOnInit(): void {}
@@ -23,7 +27,16 @@ export class ProductCreateComponent implements OnInit {
   }
 
   createProduct() {
-    this.productService.create(this.product).subscribe(() => {
+    if (!this.product.name || !this.product.price) {
+      this.productService.showMessage("Nome ou preço inválido");
+    }
+
+    const _product = {
+      ...this.product,
+      price: this.product.price ? parseFloat(this.product.price) : 0,
+    };
+
+    this.productService.create(_product).subscribe(() => {
       this.productService.showMessage("Produto criado com sucesso!");
       this.goBack();
     });

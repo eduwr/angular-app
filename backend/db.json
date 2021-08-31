@@ -24,6 +24,16 @@
       "name": "Poduto de Teste",
       "price": 99.9,
       "id": 5
+    },
+    {
+      "name": "pen drive",
+      "price": "15.50",
+      "id": 6
+    },
+    {
+      "name": "Borracha",
+      "price": 2.5,
+      "id": 7
     }
   ]
 }
