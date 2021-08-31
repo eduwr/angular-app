@@ -19,6 +19,11 @@
       "id": 4,
       "name": "Notebook Acer Nitro",
       "price": 8666.99
+    },
+    {
+      "name": "Poduto de Teste",
+      "price": 99.9,
+      "id": 5
     }
   ]
 }
