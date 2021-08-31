@@ -13,6 +13,10 @@ body {
   color: #ff0000;
 }
 
+.white {
+  color: #ffffff;
+}
+
 .v-middle {
   vertical-align: middle;
 }
