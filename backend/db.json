@@ -3,17 +3,7 @@
     {
       "id": 1,
       "name": "Caneta BIC Preta",
-      "price": 5.89
-    },
-    {
-      "id": 2,
-      "name": "Notebook Mac Pro M1",
-      "price": 12000.89
-    },
-    {
-      "id": 3,
-      "name": "Samsung S20+",
-      "price": 4999.89
+      "price": "2.99"
     },
     {
       "id": 4,
@@ -21,24 +11,14 @@
       "price": 8666.99
     },
     {
-      "name": "Poduto de Teste",
-      "price": 99.9,
+      "name": "Macbook M1",
+      "price": 9999.99,
       "id": 5
     },
     {
-      "name": "pen drive",
-      "price": "15.50",
+      "name": "wer",
+      "price": 425,
       "id": 6
-    },
-    {
-      "name": "Borracha",
-      "price": 2.5,
-      "id": 7
-    },
-    {
-      "name": "Cesto étnico",
-      "price": 199.9,
-      "id": 8
     }
   ]
 }

@@ -16,11 +16,17 @@ export class ProductReadComponent implements OnInit {
   ngOnInit(): void {
     this.productService.read().subscribe((products) => {
       this.products = products;
-      console.log(products);
     });
   }
 
   navigate(url: string) {
     this.router.navigate([url]);
+  }
+
+  deleteProduct(id: number | string) {
+    this.productService.delete(id).subscribe(() => {
+      this.productService.showMessage("Produto excluído com sucesso");
+      this.ngOnInit();
+    });
   }
 }

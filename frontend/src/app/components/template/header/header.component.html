@@ -5,11 +5,14 @@
     </a>
   </span>
   <span class="title-group">
-    <a routerLink="/">
-      <mat-icon class="white" aria-hidden="false" aria-label="home icon"
-        >home</mat-icon
+    <a routerLink="{{ routeUrl }}">
+      <mat-icon
+        class="white v-middle"
+        aria-hidden="false"
+        aria-label="home icon"
+        >{{ icon }}</mat-icon
       >
     </a>
-    Início
+    {{ title }}
   </span>
 </mat-toolbar>
