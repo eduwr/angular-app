@@ -34,6 +34,11 @@
       "name": "Borracha",
       "price": 2.5,
       "id": 7
+    },
+    {
+      "name": "Cesto étnico",
+      "price": 199.9,
+      "id": 8
     }
   ]
 }
